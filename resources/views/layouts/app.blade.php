@@ -28,8 +28,18 @@
     <div id="app">
         @include('layouts._header')
 
-        <main class="py-4">
-            @yield('content')
+        <main class="">
+             @if( isset($noContainer) && $noContainer == true )
+                @yield('content')
+            @else
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            @yield('content')
+                        </div>
+                    </div>
+                </div>
+            @endif
         </main>
 
         @include('layouts._footer')
