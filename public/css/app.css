@@ -10921,6 +10921,89 @@ input[type=button]::focus {
  * components
  * ========================================================================= */
 
+/* ----------------------------------------------------------------------------
+ * jobs indexCard
+ * ------------------------------------------------------------------------- */
+
+.c-job-index-card--img__wrap {
+  padding: 0;
+}
+
+.c-job-index-card--img__sizing {
+  width: 100%;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.c-job-index-card--img__sizing:hover {
+  opacity: 0.8;
+}
+
+.c-job-index-card--right {
+  position: relative;
+}
+
+.c-job-index-card__ttl {
+  padding-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 600;
+}
+
+.c-job-index-card__ttl--wrap {
+  min-height: 40px;
+}
+
+.c-job-index-card__ttl--link {
+  color: #000000;
+}
+
+.c-job-index-card--desc {
+  margin-top: 16px;
+  min-height: 96px;
+}
+
+.c-job-index-card--desc-ttl {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.c-job-index-card--desc-p {
+  font-size: 12px;
+  height: 32px;
+  overflow: hidden;
+  position: relative;
+}
+
+.c-job-index-card__btn--wrap {
+  margin-top: 16px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .c-job-index-card--img__sizing {
+    height: 180px;
+  }
+
+  .c-job-index-card--desc {
+    min-height: 56px;
+  }
+
+  .c-job-index-card hr {
+    border: 0;
+    border-top: 1px solid #3a3a3a;
+    margin: 32px 0;
+  }
+}
+
 /* ============================================================================
 * modules
 * ========================================================================= */
@@ -11267,7 +11350,60 @@ a.m-btn {
   font-weight: 600;
 }
 
+/* ----------------------------------------------------------------------------
+ * tag
+ * ------------------------------------------------------------------------- */
+
+.m-tag {
+  display: inline-block;
+  font-size: 10px;
+  line-height: 1.6;
+  height: 16px;
+  border: 1px solid #686f71;
+  border-radius: 8px;
+  color: #686f71;
+  background-color: #ffffff;
+  text-align: center;
+  letter-spacing: 1.8px;
+  padding: 0 8px 0 8px;
+  margin-left: 8px;
+  margin-bottom: 4px;
+}
+
 /* ============================================================================
 * pages
 * ========================================================================= */
+
+/* ----------------------------------------------------------------------------
+ * page index
+ * ------------------------------------------------------------------------- */
+
+.p-index__image {
+  height: 400px;
+  position: relative;
+  background-image: url(/images/bg-top.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  padding-top: 136px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.p-index--copy {
+  position: relative;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-align: center;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 48px;
+}
+
+.p-index__search-form {
+  width: 100%;
+  padding: 0 16px;
+}
 
