@@ -12,7 +12,7 @@
         "artesaos/seotools": "^0.16.0",
         "encore/laravel-admin": "^1.7.0",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": "6.0.*",
+        "laravel/framework": "6.20.*",
         "laravel/tinker": "^1.0",
         "jenssegers/agent": "^2.6"
     },
